@@ -1,0 +1,19 @@
+name: My First Action
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:  # Lets you trigger manually
+
+jobs:
+  test:
+    runs-on: ubuntu-latest  # Free Linux machine GitHub provides
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4  # Grabs your repo files
+
+      - name: 21f1002348@ds.study.iitm.ac.in  # Your required step!
+        run: echo "Hello from my GitHub Action!"
+
+      - name: List files
+        run: ls -la  # Just shows files, for fun
