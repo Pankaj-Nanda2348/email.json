@@ -1,1 +1,1 @@
-t("Hello GitHub")z
+print("Hello GitHub")
